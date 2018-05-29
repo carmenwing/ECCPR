@@ -6,6 +6,7 @@ int main()
     int n,k,i,j,ok;
     unsigned M;
     long double a=1,b=1;
+    //de ce merge doar cu long double???
     
     scanf("%d %d", &n,&M);
     
@@ -30,5 +31,5 @@ int main()
     
 }
 
-#include<stdio.h>
+
 
