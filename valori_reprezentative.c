@@ -20,15 +20,15 @@ int main()
         {   s=0;
             for (j=0;j<n;j++)
              {
-                   if((v[j]<v[i])&& (i!=j))
-                { s++;
-                    
-                 if (s>=5)
-                     {
-                         suma = suma+v[i];
-                         count = count+1;
-                            break;
-                     }
+                   if((v[j]<=v[i])&& (i!=j))
+                {
+                     s++;
+                     if (s>=5)
+                         {
+                             suma = suma+v[i];
+                             count = count+1;
+                                break;
+                         }
                 }  
                    
             }
