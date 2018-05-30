@@ -97,9 +97,9 @@ int main()
             printf("Gresit");
             exit(0);
         }
-    for(i=0;i<9;i+=3)
+    for(i=0;i<6;i+=3)
         {
-            for(j=0;j<9;j+=3)
+            for(j=0;j<6;j+=3)
             {
                     f = verificare_bloc(i,j);
                     if(f == false)
@@ -107,14 +107,11 @@ int main()
                             printf("Gresit");
                             exit(0);
                         }  
-                    else
-                        {
-                            printf("Corect");
-                            exit(0);
-                        }
+                    
              }
         }
-  
+    printf("Corect");
+    
     
     
 }
