@@ -3,7 +3,7 @@
 #include<stdbool.h>
 
 bool f = true;
-int a[9][9],k;
+int a[9][9];
 
 int verificare_linii()
 {
