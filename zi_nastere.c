@@ -51,8 +51,26 @@ int main()
         
      for(i=0;i<nr;i++)    
         {
-            printf("%02d-%02d\n", aniv[i].zi, aniv[i].luna );
+            if(aniv[i].zi<10 && aniv[i].luna>9)
+                {
+                     printf("0%d-%d\n", aniv[i].zi, aniv[i].luna );
+                }
+           else if(aniv[i].luna<10 && aniv[i].zi>9)
+                {
+                     printf("%d-0%d\n", aniv[i].zi, aniv[i].luna );
+                }    
+            else if((aniv[i].luna<10) && (aniv[i].zi<10))
+                {
+                     printf("0%d-0%d\n", aniv[i].zi, aniv[i].luna );
+                }  
+            else //if(aniv[i].luna>9 && aniv[i].zi>9)
+                {
+                     printf("%d-%d\n", aniv[i].zi, aniv[i].luna );
+                }  
         }
         
-         
+     //SAU  printf("%02d-%02d\n", aniv[i].zi, aniv[i].luna );   - afiseaza nr de max 2 cifre si completeaza cu cati de 0 este nevoie
+        
+        
+        
 }
