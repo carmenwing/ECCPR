@@ -1,40 +1,36 @@
-#include <iostream>
-#include <string.h>
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
 
-int main() {
-	
-char text[1002];
-int i,j;
-fgets(text, sizeof text, stdin);
-struct Cifru {
-                char vechi, nou;
-    
-             };
-struct Cifru cifru[62];
-for(i=0; i<=61;i++)
-        scanf("%c,%c ", &cifru[i].vechi, &cifru[i].nou);
-
-for(i=0;i<=strlen(text)-1;i++)
-    {
-        for(j=0;j<=61;j++)
+int main()
+{
+        int i,j;
+        char text[1001];
+        struct cifru {
+                            char vechi;
+                            char nou;
+        };
+        struct cifru c[62];
+        fgets(text, sizeof text, stdin);
+        
+        for(i=0;i<62;i++)
             {
-                {
-                    if(text[i]==cifru[j].vechi)
-                       {    
-                           text[i]= cifru[j].nou;
-                           break;
-                       }
-                    
-                }
-                
-                
+                scanf("%c,%c ", &c[i].vechi, &c[i].nou);
             }
-        
-        
-    }
-    
-    printf("%s", text);
-
-
-
+            
+        for(j=0;j<strlen(text);j++)
+            {
+                for(i=0;i<62;i++)
+                    {
+                        if(text[j]==c[i].vechi)
+                            {
+                                text[j] = c[i].nou;
+                                break;
+                            }
+                    }
+            }
+            
+        printf("%s", text);    
 }
+/// diferenta %c - %s
+//ATENTIE la printare...spatii...dupa inlocuiri in general, foloseste BREAK!!! 
