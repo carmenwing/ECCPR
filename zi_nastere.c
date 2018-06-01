@@ -51,18 +51,8 @@ int main()
         
      for(i=0;i<nr;i++)    
         {
-            printf("%d-%d\n", aniv[i].zi, aniv[i].luna );
+            printf("%02d-%02d\n", aniv[i].zi, aniv[i].luna );
         }
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+         
 }
