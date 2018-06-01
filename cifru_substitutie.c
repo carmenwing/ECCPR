@@ -4,14 +4,16 @@
 
 int main()
 {
+        #define N 1001
         int i,j;
         char text[1001];
+        //NU FOLOSESC SIZEOF!!! DEFINESC N!!FARA VIRGULA SI FARA EGAL!!!
         struct cifru {
                             char vechi;
                             char nou;
         };
         struct cifru c[62];
-        fgets(text, sizeof text, stdin);
+        fgets(text, N, stdin);
         
         for(i=0;i<62;i++)
             {
