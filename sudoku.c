@@ -111,7 +111,9 @@ int main()
              }
         }
     printf("Corect");
-    
+    //sunt ff multe verificari de facut, si este de ajuns ca o singura data sa nu se indeplineasca conditia ca sa afisez gresit, 
+    //deci dupa fiecare test verific si daca este gresit afisez mesajul si dau exit!!!!! profit de orice test picat. La final, 
+    //se va afisa corect numai daca pt niciun test nu s-a intrat in printare "Gresit", si apoi in exit!!!
     
     
 }
