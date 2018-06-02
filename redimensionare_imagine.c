@@ -51,7 +51,7 @@ int main()
                     scanf("%d %d %d\n", &elem[i][j].r, &elem[i][j].g, &elem[i][j].b );
                 }
         }
-    
+    //merg doar pe linii/coloane multiplu de s, pentru liniile/coloanele dintre ele, verific in functia maxim
     for(i=0;i<m;i+=s)
         {
             for(j=0;j<m;j+=s)
@@ -61,7 +61,7 @@ int main()
                 }
         }
             
-    //indicii i si j trebuie declarat local, altfel apare conflict!!!!        
+    //indicii i si j trebuie declarati local, altfel apare conflict!!!!        
             
             
             
