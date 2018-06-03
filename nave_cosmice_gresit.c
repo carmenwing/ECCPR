@@ -6,13 +6,12 @@
 int main()
 {
     
-    int n,i,j, min_initializat=0, index;
-    double d_x,d_y,d_z,min = 0.0, sum = 0.0;
-    struct tip{
-                double x,y,z,d,vizitat;
-    };
+    int n,i,j, min_initializat = 0, index;
+    double d_x, d_y, d_z, min, sum;
+    struct tip { double x, y, z, d;
+                 int vizitat; };
+    struct tip coord[100], p;
     
-    struct tip coord[100],p;
     scanf("%d\n", &n);
     
     for( i = 0; i < n; i++)
@@ -26,15 +25,15 @@ int main()
     {
         min_initializat = 0;
         
-        for(i=0;i<n;i++)
+        for( i = 0; i < n; i++)
             {
-                if(coord[i].vizitat == 0)
+                if ( coord[i].vizitat == 0 )
                     {
                         d_x = pow((p.x - coord[i].x),2);
                         d_y = pow((p.y - coord[i].y),2);
                         d_z = pow((p.z - coord[i].z),2);
                         coord[i].d = sqrt( d_x + d_y  + d_z );
-                        if(min_initializat == 0)
+                        if ( min_initializat == 0 )
                             {
                                 min = coord[i].d;
                                 min_initializat = 1;
@@ -42,7 +41,7 @@ int main()
                             }
                         else
                             {
-                                if(min > coord[i].d)
+                                if ( min > coord[i].d )
                                     {
                                         min = coord[i].d;
                                         index = i;
@@ -55,7 +54,7 @@ int main()
         p.x = coord[index].x;
         p.y = coord[index].y;
         p.z = coord[index].z;
-        coord[i].vizitat = 1;
+        coord[index].vizitat = 1;
     }
     
     printf("%.2lf\n", sum);
