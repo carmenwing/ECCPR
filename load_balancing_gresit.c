@@ -4,7 +4,7 @@ int main()
 {
     int i,j,z;
     unsigned short int n,k;
-     int v[k][1000];
+    unsigned int v[k][1000];
     scanf("%hu %hu\n", &k, &n);
     for(i=0;i<k;i++)
         {
