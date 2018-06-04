@@ -17,12 +17,12 @@ int main()
     };
     
     struct tip lista[N], temp;
-    fgets(s, sizeof(s), stdin);
-    s[strlen(s)-1] = '\0';
+    fgets(s, sizeof(s), stdin); //IAU TOT TEXTUL!!!!!!
+    s[strlen(s)-1] = '\0'; //IMPORTANT!!
     
      for(i=0;i<strlen(s);i++)
         {
-            s[i] = tolower(s[i]);
+            s[i] = tolower(s[i]); ///CERINTA!!!
         }
     p = strtok(s," ");
     while(p)
@@ -36,7 +36,7 @@ int main()
                             ok=1;
                             break;
                         }
-                }//AICI SE INCHEIE FOR-UL!!!            
+                }//AICI SE INCHEIE FOR-UL!!!  ALTFEL NU MERGE!!!!     
             if(ok==0) 
             {
                 strcpy(lista[nr].cuv,p);
@@ -44,7 +44,7 @@ int main()
                 nr++;                   
             }
         
-            p = strtok(NULL, " ");    
+            p = strtok(NULL, " ");  STRTOK DE NULL SI SPATIU!!!!! 
             
         }
     for(i=0;i<nr-1;i++)
