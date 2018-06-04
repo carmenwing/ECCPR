@@ -2,7 +2,7 @@
 #include<string.h>
 #include<stdlib.h>
 
-
+//DE VERIFICAT ALGORITMII...CAND SE INCHEIE FOR-URI, IF-URI!!!
 int main()
 {
     int k,n,i,j,gol1,gol2,ok1,ok2,nr=0;
