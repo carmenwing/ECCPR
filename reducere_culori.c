@@ -37,6 +37,7 @@ int main()
                                             if ((a[i][j].v[k]>(z*256)/s) && (a[i][j].v[k]<=((z+1)*256)/s))
                                             {
                                                  a[i][j].v[k] = z;
+                                                //FARA BREAK!!!
                                             }
                                         }
                                 }
