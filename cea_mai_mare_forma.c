@@ -22,8 +22,8 @@ int main()
     
     for(i=1; i<n; i++)
         {
-            scanf("%s %f %f\n", b.nume, &b.d1, &b.d2);
-             if(strcmp(b.nume, "dreptunghi") == 0)
+            scanf("%s %f %f\n", b.nume, &b.d1, &b.d2); //daca e patrat/cerc si nu primeste d2, 
+             if(strcmp(b.nume, "dreptunghi") == 0)     //ce se intampla?cand trece mai departe? \n ma ajuta de fapt??
                     {
                         if(max<b.d1*b.d2)
                             {
