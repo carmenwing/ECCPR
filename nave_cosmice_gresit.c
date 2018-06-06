@@ -5,7 +5,7 @@
 
 int main()
 {
-    int n,i,j, min_initializat = 0, index;
+    int n,i,j, min_initializat = 0, index, z;
     double d_x, d_y, d_z, min, sum;
     struct tip { double x, y, z, d;
                  int vizitat; };
@@ -16,8 +16,9 @@ int main()
         scanf("%lf %lf %lf\n", &coord[i].x, &coord[i].y, &coord[i].z);
         coord[i].vizitat = 0;
     }  
-    scanf("%lf %lf %lf\n", &p.x, &p.y, &p.z);        
-    while(n--)
+    scanf("%lf %lf %lf\n", &p.x, &p.y, &p.z);    
+    z = n; ///folosesc o alta variabila, nu tot n!!pentru ca mai jos cand inru in for, n nu va mai fi
+    while(z--)    //acelasi si for-ul nu mai cauta peste tot!!!
     {
         min_initializat = 0;
         for( i = 0; i < n; i++)
