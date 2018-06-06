@@ -15,6 +15,7 @@ int main()
     
     scanf("%d\n", &n);
     scanf("%s %f %f\n", a.nume, &a.d1, &a.d2);
+    //pot initializa max cu 1 si sa sar de aceasta initializare, sa incep mai jos for-ul de la 0
     if(strcmp(a.nume, "dreptunghi") == 0) max = a.d1*a.d2;
     else if (strcmp(a.nume, "patrat") == 0) max = a.d1*a.d1;
     else  max = a.d1*a.d1*3.14;
