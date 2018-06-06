@@ -6,7 +6,7 @@ int main()
 {
         #define N 1001
         int i,j;
-        char text[1001];
+        char text[N+1];
         //NU FOLOSESC SIZEOF!!! DEFINESC N!!FARA VIRGULA SI FARA EGAL!!!
         struct cifru {
                             char vechi;
