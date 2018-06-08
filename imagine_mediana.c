@@ -13,7 +13,7 @@
             scanf("%d\n", &a[i][j]);
         }
      for (i = 0; i < m+2; i++)
-            for ( j = 0; j < n+2; j++)
+            for ( j = 0; j < n+2; j++)//
                 b[i][j] = 0;
                 
     for (i = 1; i < m+2-1; i++)
@@ -41,13 +41,13 @@
                                }
                            }
                         }
-                    b[i][j] = v[2];    
+                    a[i-1][j-1] = v[2];    
                }
         }
-        for (i = 1; i < m+2-1; i++)
+        for (i = 0; i < m; i++)
         {
-            for ( j = 1; j < n+2-1; j++)
-            printf("%d\n", b[i][j]);
+            for ( j = 0; j < n; j++)
+            printf("%d\n", a[i][j]);
         }
         
 }
